@@ -1,0 +1,131 @@
+*{margin: 0;
+padding: 0;
+}
+
+#upper{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: flex-start;
+    
+}
+#upper_middle img{
+width: 230px;
+margin: 20px 0px 0px 120px;
+
+}
+
+#left{
+  
+    margin-left: 20px;
+    padding: 0px;
+    font-size: larger;
+}
+#right{
+    font-size: larger;
+    width: 30%;
+    gap: 10px;
+    margin-right: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+#right i{
+    gap: 10px;
+}
+
+
+#middle{
+    display: flex;
+    justify-content: center;
+}
+#middle ul li{
+    display: inline-block;
+    list-style: none;
+    position: relative;
+    padding: 10px 15px;
+    /* border: 1px solid; */
+
+}
+#middle ul li:hover{
+    color: orange;
+    background-color: white;
+}
+
+#middle ul li a{
+    display: block;
+    color: #222;
+    text-decoration: none;
+
+}
+
+#middle ul li a i{
+    position: relative;
+    right: 10px;
+}
+
+
+
+#middle ul li ul{
+    display: none;
+    position: absolute;
+    background-color: white;
+    padding-top: 10px;
+    border-radius: 0px 0px 4px 4px;
+    left: 0;
+}
+
+#middle ul li:hover ul{
+    display: block;
+    
+
+}
+
+
+#middle ul li ul li a{
+    padding: 8px 14px;
+    border-radius: 5px;
+
+}
+#middle ul li ul li{
+   width: 1000px;
+   padding: 5px;
+   border-radius: 0px 0px 4px 4px;
+
+}
+
+
+#middle ul li ul li a:hover{
+    padding: 8px 14px;
+    background-color: orange;
+    color: white;
+
+}
+#bottom{
+    text-align: center;
+    background-color: rgb(215,234,242);
+    padding: 7px;
+}
+
+#glowtime{
+    margin-top: 10px;
+    text-align: center;
+    align-items: center;
+    background-color: rgb(252,244,238);
+
+   
+}
+#glowtime h3,#glowtime p{
+margin-top: 10px;
+
+}
+#glowimages {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+
+
+}
+#glowimages img{
+    width: 400px;
+   
+}
