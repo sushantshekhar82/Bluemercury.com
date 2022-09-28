@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #login{
+            height: 650px;
+            width: 50%;
+            /* border: 1px solid blue; */
+            margin: auto;
+            margin-top: 40px;
+        }
+        .h1Tag{
+            font-weight: 500;
+    font-style: normal;
+    transition: color .2s ease-in-out;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    font-family: Montserrat Regular,sans-serif;
+    font-size: 34px;
+    letter-spacing: 1px;
+    line-height: 29px;
+    text-align: center;
+    color: #12284c;
+    /* margin-top: 0 */
+        }
+     .PTag{
+            font-family: Montserrat Light,sans-serif;
+    letter-spacing: .4px;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    font-weight: inherit;
+    /* margin-top: 0; */
+    font-weight: 200;
+    font-style: normal;
+    color: #12284c;
+    line-height: 1.65;
+ 
+
+
+        }
+        .inputTag{
+            margin-bottom: 15px;
+            /* position: relative; */
+         
+    display: block;
+    padding: 10px 12px;
+    border-radius: 0;
+    border: 1px solid #12284c;
+    width: 70%;
+    line-height: normal;
+    resize: none;
+    transition: border-color .1s ease-in-out;
+    background: transparent;
+    color: inherit;
+    font: inherit;
+    margin: auto;
+    color: inherit;
+    font: inherit;
+    cursor: default;
+ 
+        }
+        #btnTag{
+          
+            /* position: relative; */
+    display: inline-block;
+    padding: 15px;
+    border-radius: 0;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: Montserrat Semi Bold,sans-serif;
+    font-size: 14px;
+    line-height: 14px;
+    transition: color .45s cubic-bezier(.785,.135,.15,.86),border .45s cubic-bezier(.785,.135,.15,.86);
+    z-index: 1;
+    -webkit-tap-highlight-color: black;
+    color: #fff;
+    background-color: #12284c;
+    width: 74%;
+    margin: auto;
+    margin-left: 13%;
+   margin-top: 20px;
+}  
+.divTag{
+    display: flex;
+    /* display: block; */
+    height: 60px;
+    width: 70%;
+ margin: auto;
+ margin-top: 20px;
+    /* border: 1px solid blue; */
+    background-color: #d1e8ee; 
+    padding: 10px;
+    /* margin: 20px 0; */
+}
+.spanTag{
+    font-size: 18px;
+    line-height: 18px;
+    color: #12284c;
+    line-height: 1.65;
+    font-weight: 200;
+}
+#join{
+    display: flexbox;
+ 
+}
+     
+
+    </style>
+</head>
+<body>
+    
+
+    <div id="login">
+        <h1 class="h1Tag">CREATE ACCOUNT</h1>
+        <p class="PTag">Complete the form below to create a bluemercury.com <br>
+          account.</p>
+        <input type="text"  class="inputTag" id="email" placeholder="Email*"><br>
+        <input type="text"  class="inputTag" id="fristname" placeholder="Frist Name*"><br>
+        <input type="text"  class="inputTag" id="lastname" placeholder="Last Name*"><br>
+        <input type="password"   class="inputTag" id="password" placeholder="Password*"><br>
+        <input type="datemonth"  class="inputTag" id="Brithday Month" placeholder="Brithday Month*">
+<div class="divTag">
+    <div><input type="checkbox"></div>
+    <div  id="join">
+      <p class="PTag"><span class="spanTag">Join</span></p>
+     
+   <p class="PTag"><span class="spanTag">BLUEREWORD</span></p>
+    </div>
+    <div>
+<p><span class="spanTag">Earn $10 for every $250 you spend, plus FREE birthday gifts & treatments!</span></p>
+    </div>
+</div>
+  
+        <button id="btnTag" onclick="singup()">Create Account</button>
+        <p class="PTag">Don't have an account?<span><a href="/">create one</a></span></p>
+    </div>
+</body>
+</html>
