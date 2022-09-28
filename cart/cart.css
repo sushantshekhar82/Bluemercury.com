@@ -1,0 +1,83 @@
+#body {
+    margin: 140px 100px 0px 70px;
+    font-family: Montserrat Light, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #12284c;
+    background: #fff;
+    line-height: 1.65;
+    overflow-x: hidden;
+}
+
+#your_bag {
+    font-weight: 550;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    font-size: 40px
+}
+
+#cart_header {
+    font-size: large;
+    color: #12284c;
+    border: 0px solid black;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+#cart_header>p {
+    font-size: x-large;
+}
+
+#cart_header>div {
+    border: 0px solid black;
+    width: 55%;
+    display: flex;
+    justify-content: space-around;
+    height: 90%;
+}
+
+#no_items {
+    font-size: large;
+}
+
+#mystery_samples {
+    display: flex;
+    justify-content: space-between;
+    line-height: 20px;
+}
+
+#mystery_samples>div {
+    display: flex;
+}
+
+#offers {
+    line-height: 10px;
+}
+
+#subtotal {
+    width: max-content;
+    margin-left: auto;
+    line-height: 16px;
+}
+
+#subtotal>h3 {
+    text-align: end;
+}
+
+#checkout_button {
+    width: 400px;
+    background-color: #12284c;
+    color: white;
+    height: 40px;
+    font-size: large;
+    font-weight: 700;
+    margin-top: 21px;
+    margin-bottom: 12px;
+    cursor: pointer;
+}
+
+#div {
+    width: 400px;
+    margin-left: auto;
+}
