@@ -7,13 +7,16 @@
     <title>Document</title>
     <style>
         #login{
-            height: 650px;
-            width: 50%;
-            /* border: 1px solid blue; */
+            height: 750px;
+            width: 52%;
+             /* border: 1px solid blue;  */
             margin: auto;
             margin-top: 40px;
+            background-color: #fff;
+            /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
         }
         .h1Tag{
+        
             font-weight: 500;
     font-style: normal;
     transition: color .2s ease-in-out;
@@ -29,7 +32,7 @@
         }
      .PTag{
             font-family: Montserrat Light,sans-serif;
-    letter-spacing: .4px;
+    letter-spacing: .5px;
     font-size: 16px;
     line-height: 24px;
     text-align: center;
@@ -39,7 +42,7 @@
     font-style: normal;
     color: #12284c;
     line-height: 1.65;
- 
+ margin-top: 40px;
 
 
         }
@@ -48,7 +51,7 @@
             /* position: relative; */
          
     display: block;
-    padding: 10px 12px;
+    padding: 14px 16px;
     border-radius: 0;
     border: 1px solid #12284c;
     width: 70%;
@@ -80,22 +83,22 @@
     -webkit-tap-highlight-color: black;
     color: #fff;
     background-color: #12284c;
-    width: 74%;
+    width: 44%;
     margin: auto;
-    margin-left: 13%;
-   margin-top: 20px;
+    margin-left: 27%;
+   margin-top: 10px;
 }  
 .divTag{
     display: flex;
     /* display: block; */
-    height: 60px;
-    width: 70%;
+    height: 70px;
+    width: 71%;
  margin: auto;
- margin-top: 20px;
+ margin-top: 30px;
     /* border: 1px solid blue; */
     background-color: #d1e8ee; 
     padding: 10px;
-    /* margin: 20px 0; */
+     /* margin: 20px 0;  */
 }
 .spanTag{
     font-size: 18px;
@@ -108,8 +111,48 @@
     display: flexbox;
  
 }
-     
+   .loyalty-label__left{
+  
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 18px;
+    line-height: 18px;
+   }
+   .loyalty-label__right{
+    width: 100%;
+    margin-top: 8px;
+    font-family: Montserrat Light,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    /* color: #12284c; */
+     line-height: 1.65; 
+     color: #607899;
+   }  
+   .loyalty-join{
 
+    position: relative;
+    top: -2px;
+    padding-right: 6px;
+    font-size: 32px;
+    line-height: 18px;
+    letter-spacing: 1.14px;
+    font-family: Quickbrush,serif;
+    text-transform: lowercase;
+    color: #607899;
+   }
+   .bluerewards-logotype{
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 18px;
+    letter-spacing: 1.18px;
+
+    font-style: normal;
+    color: #607899;
+    font-weight: 200;
+   }
+a{
+    color: #607899; 
+}
     </style>
 </head>
 <body>
@@ -123,21 +166,34 @@
         <input type="text"  class="inputTag" id="fristname" placeholder="Frist Name*"><br>
         <input type="text"  class="inputTag" id="lastname" placeholder="Last Name*"><br>
         <input type="password"   class="inputTag" id="password" placeholder="Password*"><br>
-        <input type="datemonth"  class="inputTag" id="Brithday Month" placeholder="Brithday Month*">
+       
+        <!-- <input type="datemonth"  class="inputTag" id="Brithday Month" placeholder="Brithday Month*"> -->
 <div class="divTag">
     <div><input type="checkbox"></div>
-    <div  id="join">
-      <p class="PTag"><span class="spanTag">Join</span></p>
+    <!-- <div  id="join"> -->
+        <div class="loyalty-label__content">
+            <div class="loyalty-label__left">
+                <span class="loyalty-join">Join</span><span class="bluerewards-logotype"><span class="is-emphasized">Blue</span>Rewards</span></div>
+            <div class="loyalty-label__right">
+                <span>
+                    Earn $10 for every $250 you spend, plus FREE birthday gifts & treatments!
+                </span>
+            </div>
+        </div>
+    </div>
+      <!-- <p class="PTag"><span class="spanTag">Join</span></p>
      
-   <p class="PTag"><span class="spanTag">BLUEREWORD</span></p>
-    </div>
-    <div>
-<p><span class="spanTag">Earn $10 for every $250 you spend, plus FREE birthday gifts & treatments!</span></p>
-    </div>
-</div>
-  
+   <p class="PTag"><span class="spanTag">BLUEREWORD</span></p> -->
+    <!-- </div> -->
+
+    <p class="PTag">By continuing, you agree to Bluemercury's<span><a href="/">Privecy Prectices</a></span></p>
         <button id="btnTag" onclick="singup()">Create Account</button>
-        <p class="PTag">Don't have an account?<span><a href="/">create one</a></span></p>
+        <p class="PTag">Already have a bluemercury.com account?<span><a href="login.html">Sign in</a></span></p>
+</div>
+
     </div>
 </body>
 </html>
+<script src="singup.js">
+
+</script>
