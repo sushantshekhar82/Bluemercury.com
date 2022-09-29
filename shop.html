@@ -26,16 +26,18 @@
          <P>FILTER SKIN CARE BY</P>
          <select id="filterbrand" onchange="filterbrand()">
         <option>FILTER BRANDS</option>
-        <option>BRAND</option>
-        <option>PRICE</option>
-        <option>SKIN TYPE</option>
+        <option value="111SKIN">111SKIN</option>
+        <option value="BOBBI BROWN">BOBBI BROWN</option>
+        <option value="8GREENS">8GREENS</option>
+        <option value="WILDLING">WILDLING</option>
         </select>
 
         <select id="filterpricerange" onchange="filterpricerange()">
             <option>FILTER bY PRICE RANGE</option>
-            <option>BRAND</option>
-            <option>PRICE</option>
-            <option>SKIN TYPE</option>
+            <option value="$0 To $50">$0 To $50</option>
+            <option value="$50 To $100">$50 To $100</option>
+            <option value="$100 To $200">$100 To $200</option>
+            <option value="$200+">$200+</option>
             </select>
     </div>
     <div class="gridin12">
@@ -43,11 +45,13 @@
             <p>SKIN CARE</p>
             <span>SORT BY <select id="filter" onchange="sorting()">
                 <option>Featured</option>
+                <option value="">Best Sellers</option>
                 <option>Best Sellers</option>
                 <option>Price Low to High</option>
                 <option>Price High to Low</option>
                 </select></span>
         </div>
+        <div id="containershop"></div>
        
     </div>
 </div>

@@ -1,6 +1,6 @@
 #gridout1{
     display: grid;
-    grid-template-columns: 25% 75%;
+    grid-template-columns: 23% 77%;
     gap: 20px;
     justify-content: space-evenly;
 
@@ -11,7 +11,7 @@
 }
 .gridin12{
    
-  margin-right: 30px;
+  margin-right: 20px;
   margin-left: 20px;
  
     
@@ -61,4 +61,39 @@ font-size: 22px;
 }
 hr{
 color: rgb(151, 145, 145);
+}
+#filterpricerange{
+    margin-top: 10px;
+}
+#containershop{
+    display: grid;
+    grid-template-columns: repeat(4,250px);
+    gap: 5px;
+}
+.productcont{
+    width: 250px;
+    height: 500px;
+    text-align: center;
+    
+    display: grid;
+    justify-content: baseline;
+    align-items: center;
+}
+.productcont>img{
+    width: 90%;
+
+}
+.productcont>p{
+    line-height: 20px;
+}
+.addtocarbtn{
+    background-color: #12284c;
+    text-align: center;
+    color: #fff;
+    width: 250px;
+    height: 44px;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+   
 }
