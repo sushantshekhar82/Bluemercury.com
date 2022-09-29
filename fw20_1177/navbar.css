@@ -1,0 +1,218 @@
+*{margin: 0;
+padding: 0;
+font-family: Montserrat Regular,sans-serif;
+}
+
+#upper{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: flex-start;
+    
+}
+#upper_middle img{
+width: 230px;
+margin: 20px 0px 0px 120px;
+
+}
+
+#left{
+  
+    margin-left: 20px;
+    padding: 0px;
+    font-size: larger;
+}
+#right{
+    font-size: larger;
+    width: 30%;
+    gap: 10px;
+    margin-right: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+#right i{
+    gap: 10px;
+}
+
+
+#middle{
+    display: flex;
+    justify-content: center;
+}
+#middle ul li{
+    display: inline-block;
+    list-style: none;
+    position: relative;
+    padding: 10px 15px;
+    /* border: 1px solid; */
+
+}
+#middle ul li:hover{
+    color: orange;
+    background-color: white;
+}
+
+#middle ul li a{
+    display: block;
+    color: #222;
+    text-decoration: none;
+
+}
+
+#middle ul li a i{
+    position: relative;
+    right: 10px;
+}
+
+
+
+#middle ul li ul{
+    display: none;
+    position: absolute;
+    background-color: white;
+    padding-top: 10px;
+    border-radius: 0px 0px 4px 4px;
+    left: 0;
+}
+
+#middle ul li:hover ul{
+    display: block;
+    }
+
+
+#middle ul li ul li a{
+    padding: 8px 14px;
+    border-radius: 5px;
+}
+
+#middle ul li ul li{
+   width: 1000px;
+   padding: 5px;
+   border-radius: 0px 0px 4px 4px;
+}
+
+
+#middle ul li ul li a:hover{
+    padding: 8px 14px;
+    background-color: orange;
+    color: white;
+
+}
+#bottom{
+    text-align: center;
+    background-color: rgb(215,234,242);
+    padding: 7px;
+}
+
+#glowtime,#bleu{
+    margin-top: 10px;
+    text-align: center;
+    align-items: center;
+    background-color: rgb(252,244,238);
+
+   
+}
+#glowtime h1,#bleu h1{
+    padding-top: 50px;
+}
+#glowtime p,#bleu p{
+    width: 54%;
+    margin: auto;
+margin-top: 10px;
+font-weight: lighter;
+
+
+
+}
+#glowimages ,#bleuimages{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+
+
+}
+#glowimages img,#bleuimages img{
+    width: 400px;
+    padding-bottom: 70px;
+   margin: 15px;
+   
+}
+#haircare {
+
+    /* width: 70%; */
+    display: flex;
+   
+   
+}
+#haircare div {
+    width: 50%;
+   margin: 20px;
+   
+   
+
+}
+#haircare div h3, #bleu_product div h3{
+    text-decoration: underline;
+    padding: 20px;
+}
+#haircare div h2,#haircare div p,#bleu_product div h2,#bleu_product div p{
+    padding: 10px;
+}
+#haircare div:nth-child(1),#bleu_product div:nth-child(1){
+    margin-left: 50px ;
+
+}
+#haircare div:nth-child(2),#bleu_product div:nth-child(3){
+    margin-right: 50px ;
+
+}
+#haircare div img  {
+    width: 100%;
+}
+#bleu{
+    background-color: rgb(240,246,250);
+}
+
+#bleu_product{
+    display: flex;
+   
+}
+#bleu_product div{
+    width: 33%;
+    margin: 15px;
+}
+#bleu_product div img  {
+    width: 100%;
+}
+
+#footer{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    color: grey;
+}
+#footer div:nth-child(1) h5,#footer div h3{
+    margin: 30px 0px 30px 10px;
+}
+#footer div:nth-child(1) input{
+    border-top: 1px;
+    border-left: 1px;
+    border-right: 1px;
+    margin-left: 10px;
+    width: 70%;
+    padding: 10px;
+}
+#footer div:nth-child(1) i{
+    font-size: 30px;
+    margin: 10px;
+    color: black;
+    
+}
+#footer div p{
+   margin: 10px;
+}
+#footer div{
+    border-top: 1px solid;
+   
+}
+
+
