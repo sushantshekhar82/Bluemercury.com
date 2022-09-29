@@ -1,5 +1,6 @@
 *{margin: 0;
 padding: 0;
+font-family: Montserrat Regular,sans-serif;
 }
 
 #upper{
@@ -76,21 +77,18 @@ margin: 20px 0px 0px 120px;
 
 #middle ul li:hover ul{
     display: block;
-    
-
-}
+    }
 
 
 #middle ul li ul li a{
     padding: 8px 14px;
     border-radius: 5px;
-
 }
+
 #middle ul li ul li{
    width: 1000px;
    padding: 5px;
    border-radius: 0px 0px 4px 4px;
-
 }
 
 
@@ -106,7 +104,7 @@ margin: 20px 0px 0px 120px;
     padding: 7px;
 }
 
-#glowtime{
+#glowtime,#bleu{
     margin-top: 10px;
     text-align: center;
     align-items: center;
@@ -114,18 +112,107 @@ margin: 20px 0px 0px 120px;
 
    
 }
-#glowtime h3,#glowtime p{
+#glowtime h1,#bleu h1{
+    padding-top: 50px;
+}
+#glowtime p,#bleu p{
+    width: 54%;
+    margin: auto;
 margin-top: 10px;
+font-weight: lighter;
+
+
 
 }
-#glowimages {
+#glowimages ,#bleuimages{
     margin-top: 10px;
     display: flex;
     justify-content: center;
 
 
 }
-#glowimages img{
+#glowimages img,#bleuimages img{
     width: 400px;
+    padding-bottom: 70px;
+   margin: 15px;
    
 }
+#haircare {
+
+    /* width: 70%; */
+    display: flex;
+   
+   
+}
+#haircare div {
+    width: 50%;
+   margin: 20px;
+   
+   
+
+}
+#haircare div h3, #bleu_product div h3{
+    text-decoration: underline;
+    padding: 20px;
+}
+#haircare div h2,#haircare div p,#bleu_product div h2,#bleu_product div p{
+    padding: 10px;
+}
+#haircare div:nth-child(1),#bleu_product div:nth-child(1){
+    margin-left: 50px ;
+
+}
+#haircare div:nth-child(2),#bleu_product div:nth-child(3){
+    margin-right: 50px ;
+
+}
+#haircare div img  {
+    width: 100%;
+}
+#bleu{
+    background-color: rgb(240,246,250);
+}
+
+#bleu_product{
+    display: flex;
+   
+}
+#bleu_product div{
+    width: 33%;
+    margin: 15px;
+}
+#bleu_product div img  {
+    width: 100%;
+}
+
+#footer{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    color: grey;
+}
+#footer div:nth-child(1) h5,#footer div h3{
+    margin: 30px 0px 30px 10px;
+}
+#footer div:nth-child(1) input{
+    border-top: 1px;
+    border-left: 1px;
+    border-right: 1px;
+    margin-left: 10px;
+    width: 70%;
+    padding: 10px;
+}
+#footer div:nth-child(1) i{
+    font-size: 30px;
+    margin: 10px;
+    color: black;
+    
+}
+#footer div p{
+   margin: 10px;
+}
+#footer div{
+    border-top: 1px solid;
+   
+}
+
+
