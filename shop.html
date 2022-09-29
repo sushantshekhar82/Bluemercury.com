@@ -24,17 +24,24 @@
                     <p ><a class="prod" href="#">Vitamins and supliment</a</p>          
         <hr>
          <P>FILTER SKIN CARE BY</P>
-         <select id="filter" onchange="filterproduct()">
-        <option>FILTER OPTIONS</option>
+         <select id="filterbrand" onchange="filterbrand()">
+        <option>FILTER BRANDS</option>
         <option>BRAND</option>
         <option>PRICE</option>
         <option>SKIN TYPE</option>
         </select>
+
+        <select id="filterpricerange" onchange="filterpricerange()">
+            <option>FILTER bY PRICE RANGE</option>
+            <option>BRAND</option>
+            <option>PRICE</option>
+            <option>SKIN TYPE</option>
+            </select>
     </div>
     <div class="gridin12">
         <div class="topflex"> 
             <p>SKIN CARE</p>
-            <span>SORT BY <select id="filter" onchange="filterproduct()">
+            <span>SORT BY <select id="filter" onchange="sorting()">
                 <option>Featured</option>
                 <option>Best Sellers</option>
                 <option>Price Low to High</option>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Home</title>
+    <style>
+        /* Give styling here  */
+.section{
+    display: grid;
+   
+    gap: 10px;
+   
+    justify-content: space-evenly;
+}
+.section>div{
+    border: 1px solid red;
+   
+}
+input{
+    width: 300px;
+    height: 30px;
+    display: block;
+    margin: auto;
+    margin-top: 5px;
+ 
+
+}
+select{
+
+    width: 300px;
+    height: 30px;
+    display: block;
+    margin: auto;
+    margin-top: 5px;
+ 
+}
+button{
+    width: 300px;
+    height: 30px;
+    display: block;
+    margin: auto;
+    margin-top: 6px;
+}
+h2{
+    text-align: center;
+}
+#container{
+    display: grid;
+    grid-template-columns: repeat(3,300px);
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+} 
+.item>img{
+    width: 280px;
+}
+ 
+.flexbtn{
+    display: flex;
+    margin: 2px;
+    justify-content: space-evenly; 
+}
+.flexbtn>button{
+    width: 100px;
+    margin: 10px;
+    
+}
+    </style>
+  </head>
+  <body>
+    <div id="navbar">
+      <h1>Admin Panel</h1>
+    </div>
+    <div class="section">
+          <div class="productinput">
+            <h2>Add product</h2> 
+            <input type="text" id="name" placeholder="enter product name" value="">
+            <input type="number" id="price" placeholder="enter price " value="">
+            <input type="text" id="description" placeholder="enter description" value="">
+            <select id="brand">
+                <option value="111SKIN">111SKIN</option>
+                <option value="BOBBI BROWN">BOBBI BROWN</option>
+                <option value="WILDLING">WILDLING</option>
+                <option value="8GREENS">8GREENS</option>
+               </select>
+            <input type="text" id="image" placeholder="enter product url" value="">
+            <select id="pricerange">
+             <option value="$0 To $50">$0 To $50</option>
+             <option value="$50 To $100">$50 To $100</option>
+             <option value="$100 To $200">$100 To $200</option>
+            <option value="$200+">$200+</option>
+            </select>
+            <select id="sort">
+                <option value="bestseller">Best Seller</option>
+                <option value="newarrival">New Arrival</option>
+                
+               
+               </select>
+               
+            <button id="add_product" onclick="add_product()">Add Product</button>
+          <h2>Sort Based on Price</h2>
+            <button id="sort-low-to-high" onclick="sortLTH()">Sort Low to High </button>
+            <button id="sort-high-to-low" onclick="sortHTL()">Sort High to Low </button>
+          <h2>Filter by price</h2>
+            <button id="greater-than" onclick="filtergreater()">Price > 4000 </button>
+            <button id="less-than" onclick="filterless()" >Price < = 4000 </button>
+
+
+          </div>
+          <div id="container"></div>  
+    </div>
+    <!-- 1. Product form input boxes will have IDs as "name", "price", "description", "delivery" & "image" respectively.
+ 2. Add Product button ID :- "add_product".
+ 3. Sort Low to High button ID :- "sort-low-to-high"
+ 4. Sort High to Low button ID :- "sort-high-to-low"
+ 5. Price > 4000 button ID :-  "greater-than"
+ 6. Price < = 4000 button ID :- "less-than"
+ 7. All the products will be appended inside div with ID :- "container".
+ 8. Every product card will have class :- "item",
+ 9. The price in every card will have class :- "product_price" ,
+ NOTE:- Show only price amount in number, no extra tesxt should be there.
+ 10.The delivery in every card will have class :- "product_delivery" 
+ 11. The remove button will have class :- "remove_item",
+ 12. The update button will have class :- "update_price" -->
+  </body>
+</html>
+<script src="main.js"></script>
