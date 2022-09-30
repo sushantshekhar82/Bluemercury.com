@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Skincare | bluemercury</title>
     <link rel="stylesheet" href="shop.css">
+    <script src="https://kit.fontawesome.com/0aa98ad1b1.js" crossorigin="anonymous"></script>
     
 </head>
 <body>
@@ -21,34 +22,37 @@
         <p ><a class="prod" href="#">Moisturizers</a</p>    
             <p ><a class="prod" href="#">Suncare</a</p> 
                 <p ><a class="prod" href="#">Treatment and Serum</a</p> 
-                    <p ><a class="prod" href="#">Vitamins and supliment</a</p>          
+                    <p ><a class="prod" href="#">Vitamins and supliment</a></p>          
         <hr>
          <P>FILTER SKIN CARE BY</P>
-         <select id="filterbrand" onchange="filterbrand()">
-        <option>FILTER BRANDS</option>
+         <select id="filterbrand1" onchange="filterbrand()">
+        <option value="all">FILTER BRANDS All</option>
         <option value="111SKIN">111SKIN</option>
         <option value="BOBBI BROWN">BOBBI BROWN</option>
         <option value="8GREENS">8GREENS</option>
         <option value="WILDLING">WILDLING</option>
         </select>
 
-        <select id="filterpricerange" onchange="filterpricerange()">
-            <option>FILTER bY PRICE RANGE</option>
+        <select id="filterpricerange1" onchange="filterpricerange()">
+            <option value="all">FILTER bY PRICE RANGE</option>
             <option value="$0 To $50">$0 To $50</option>
             <option value="$50 To $100">$50 To $100</option>
             <option value="$100 To $200">$100 To $200</option>
             <option value="$200+">$200+</option>
             </select>
+            <!-- <div class="fa fa-heart"></div>
+            <div class="fa fa-heart-o"></div> -->
+            
     </div>
     <div class="gridin12">
         <div class="topflex"> 
             <p>SKIN CARE</p>
-            <span>SORT BY <select id="filter" onchange="sorting()">
-                <option>Featured</option>
-                <option value="">Best Sellers</option>
-                <option>Best Sellers</option>
-                <option>Price Low to High</option>
-                <option>Price High to Low</option>
+            <span>SORT BY <select id="sortproduct" onchange="sorting()">
+                <option value="all">Featured</option>
+                <option value="bestseller">Best Sellers</option>
+                <option value="newarrival">New Arrival</option>
+                <option value="plth">Price Low to High</option>
+                <option value="phtl">Price High to Low</option>
                 </select></span>
         </div>
         <div id="containershop"></div>
