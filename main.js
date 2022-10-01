@@ -1,8 +1,8 @@
 
 
-let url="https://js211mockserver.herokuapp.com/api/skincare"
+let url="https://js211mockserver.herokuapp.com/api/makeup"
 let getData=async ()=>{
-    let res=await fetch(`https://js211mockserver.herokuapp.com/api/skincare`);
+    let res=await fetch(`${url}`);
     let data=await res.json();
    console.log(data);
     renderDom(data)
@@ -28,7 +28,7 @@ let add_product=async ()=>{
         id:Date.now()+name
     }
 
-    let res= await fetch("https://js211mockserver.herokuapp.com/api/skincare",{
+    let res= await fetch(`${url}`,{
         method:"POST",
         body:JSON.stringify(storedata),
         headers:{
@@ -83,7 +83,7 @@ data.map(({name,price,brand,description,image,id})=>{
 }
 
 let remove= async (id)=>{
-    let res= await fetch(`https://js211mockserver.herokuapp.com/api/skincare/${id}`,{
+    let res= await fetch(`${url}/${id}`,{
         method:"DELETE",
         
         headers:{
@@ -100,7 +100,7 @@ let update=async (id)=>{
 
     let newAge={price:new_price};
 
-    let res=await fetch(`https://js211mockserver.herokuapp.com/api/skincare/${id}`,{
+    let res=await fetch(`${url}/${id}`,{
         method:"PATCH",
         body:JSON.stringify(newAge),
         headers:{
