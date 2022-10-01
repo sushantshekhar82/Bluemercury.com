@@ -82,7 +82,7 @@ let q=0;
 function clickme(el){
 shopitem.push(el)
 localStorage.setItem('shop',JSON.stringify(shopitem));
-window.location.href="skincareshop.html"
+window.location.href="makeupshop.html"
 }
 //  let p=1
 // function addcart(el){
