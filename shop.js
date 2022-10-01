@@ -18,59 +18,62 @@ let q=0;
   q++
      let div=document.createElement('div');
      div.setAttribute("class","productcont")
-     
-     let imageproduct=document.createElement('img');
-     imageproduct.src=el.image;
-    imageproduct.addEventListener('click',function(){
+     div.addEventListener('click',function(){
       clickme(el);
      })
+     let imageproduct=document.createElement('img');
+     imageproduct.src=el.image;
+   
      let brandname=document.createElement('h5');
      brandname.innerText=el.brand;
+     
      let title=document.createElement('p');
      title.innerText=el.name;
+     
      let productprice=document.createElement('p');
      productprice.innerText="$"+el.price;
-     let divout=document.createElement('div');
-     divout.setAttribute('class','divout')
+ 
+    //  let divout=document.createElement('div');
+    //  divout.setAttribute('class','divout')
 
-     let divin1=document.createElement('div');
-     divin1.setAttribute('class','divin1');
-     let minusbtn=document.createElement('button');
-     minusbtn.innerText="-"
-     minusbtn.addEventListener('click',function(){
-      minitem(q)})
+    //  let divin1=document.createElement('div');
+    //  divin1.setAttribute('class','divin1');
+    //  let minusbtn=document.createElement('button');
+    //  minusbtn.innerText="-"
+    //  minusbtn.addEventListener('click',function(){
+    //   minitem(q)})
      
-     let input=document.createElement('input');
-     input.setAttribute("type","number");
-     input.setAttribute('class','quantity')
-     input.setAttribute("id",`${q}`);
-     input.setAttribute("placeholder","1");
-     input.setAttribute("value","1")
+    //  let input=document.createElement('input');
+    //  input.setAttribute("type","number");
+    //  input.setAttribute('class','quantity')
+    //  input.setAttribute("id",`${q}`);
+    //  input.setAttribute("placeholder","1");
+    //  input.setAttribute("value","1")
      
-     let plusbtn=document.createElement('button');
-     plusbtn.innerText="+";
-     plusbtn.addEventListener('click',function(){
-      maxitem(q)
-     })
-     let divin2=document.createElement('div');
-     divin2.setAttribute('class','divin2')
-    let wishlistbtn=document.createElement('button');
-    wishlistbtn.innerText="WISHLIST"
+    //  let plusbtn=document.createElement('button');
+    //  plusbtn.innerText="+";
+    //  plusbtn.addEventListener('click',function(){
+    //   maxitem(q)
+    //  })
+    //  let divin2=document.createElement('div');
+    //  divin2.setAttribute('class','divin2')
+    // let wishlistbtn=document.createElement('button');
+    // wishlistbtn.innerText="WISHLIST"
    
-     let divbtnbag=document.createElement('div');
-     divbtnbag.setAttribute("class","bagdiv")
+    //  let divbtnbag=document.createElement('div');
+    //  divbtnbag.setAttribute("class","bagdiv")
 
-     let addtocartbtn=document.createElement('button');
-     addtocartbtn.setAttribute('class','addtocarbtn');
-     addtocartbtn.innerText="ADD TO BAG";
-     addtocartbtn.addEventListener('click',function(){
-      addcart(el)
-     })
-     divin1.append(minusbtn,input,plusbtn);
-     divin2.append(wishlistbtn)
-     divout.append(divin1,divin2);
-     divbtnbag.append(addtocartbtn)
-     div.append(imageproduct,brandname,title,productprice,divout,divbtnbag)
+    //  let addtocartbtn=document.createElement('button');
+    //  addtocartbtn.setAttribute('class','addtocarbtn');
+    //  addtocartbtn.innerText="ADD TO BAG";
+    //  addtocartbtn.addEventListener('click',function(){
+    //   addcart(el)
+    //  })
+    //  divin1.append(minusbtn,input,plusbtn);
+    //  divin2.append(wishlistbtn)
+    //  divout.append(divin1,divin2);
+    //  divbtnbag.append(addtocartbtn)
+     div.append(imageproduct,brandname,title,productprice)
      cont.append(div);
  })
 
@@ -81,33 +84,33 @@ shopitem.push(el)
 localStorage.setItem('shop',JSON.stringify(shopitem));
 window.location.href="skincareshop.html"
 }
- let p=1
-function addcart(el){
-  cartitem.push(el,p);
-  let x=cartitem
-  console.log(cartitem);
-}
+//  let p=1
+// function addcart(el){
+//   cartitem.push(el,p);
+//   let x=cartitem
+//   console.log(cartitem);
+// }
 
 
-function minitem(q){
+// function minitem(q){
 
-  p--
-  if(p<1){
-    p=1;
-  }
-  document.getElementById(`${q}`).value=p;
-  console.log(q);
+//   p--
+//   if(p<1){
+//     p=1;
+//   }
+//   document.getElementById(`${q}`).value=p;
+//   console.log(q);
 
-  }
+//   }
   
-function maxitem(q){
+// function maxitem(q){
 
-  p++
+//   p++
  
-  document.getElementById(`${q}`).value= p;
+//   document.getElementById(`${q}`).value= p;
   
 
-  }
+//   }
 
 
 let  sorting= async ()=>{

@@ -137,12 +137,10 @@ color: rgb(151, 145, 145);
 }
 .productcont{
     width: 250px;
-    height: 515px;
+    height: 400px;
     text-align: center;
     
-    display: grid;
-    justify-content: baseline;
-    align-items: center;
+    
     font-size: 17px;
     font-family: Montserrat Medium,sans-serif;
     color: rgb(161, 150, 150);

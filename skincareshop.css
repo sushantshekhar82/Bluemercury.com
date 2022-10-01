@@ -1,17 +1,17 @@
 #threecol{
    display: grid;
-   grid-template-columns: 10% 40% 50%; 
+   grid-template-columns: 10% 40% 45%; 
    gap:5px;
    margin: 5px;
    margin-right: 5px;
 
 }
-#threecol>div:first-child{
-    border: 1px solid red;
-}
+
 #smallpic{
     width: 100px;
     height: 100px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-top: 20px;
 }
 #smallpic>img{
    width: 100%;
@@ -25,12 +25,13 @@ height: 500px;
 display: grid;
 justify-content: center;
 align-items: center;
+
 }
 #bigpic>img{
     width: 100%;
 }
 #info{
-   
+    
     font-family: Montserrat Semi Bold,sans-serif;
   
 }
@@ -46,10 +47,89 @@ align-items: center;
 }
 #info>p:nth-child(3){
     font-size: 30px;
-    line-height: 1px;
+
     color: rgb(63, 60, 60);
     line-height: 15px;
 
+}
+#info>p:nth-child(4){
+    font-size: 10px;
+    line-height: 0px;
+    font-weight: bold;
+     font-style: italic;
+     color: rgb(105, 98, 98);
+ 
+  
+
+}
+p+h5{
+    color: rgb(80, 76, 76);
+    
+}
+h5+h4{
+    margin-top: 30px;
+    color: #817d7d;
+}
+.addtocarbtn{
+   
+    color: #fff;
+    
+   
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+   
+    
+  
+}
+span{
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+.btnprice{
+ 
+    width: 400px;
+    height: 40px;
+    background-color: #12284c;
+    display: flex;
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+}
+.btnprice>p{
+    display: grid;
+align-items: center;
+color: #fff;
+font-size: 14px;
+font-weight: bold;
+border: none;
+
+
+
+}
+
+.bottomedesc{
+    width: 700px;
+    height: 250px;
+    margin: auto;
+
+}
+.bottomedesc>h1{
+    color: gray;
+}
+.bottomedesc>h1+p{
+    color: #817d7d;
+    font-size: 20px;
+}
+.imgflex{
+    display: flex;
+    justify-content: space-evenly;
+}
+#moreimg>img{
+    margin: 5px;
 }
 /* #gridout1{
     display: grid;
