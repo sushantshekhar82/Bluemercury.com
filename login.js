@@ -36,7 +36,7 @@ let verifyUser = (newemail, newpassword) => {
   
     if (verifyUser(email, password) === true) {
       localStorage.setItem("login", true);
-      window.location.href = "./homepage.html";
+      window.location.href = "index.html";
     } else {
       localStorage.setItem("login", false);
       return;
