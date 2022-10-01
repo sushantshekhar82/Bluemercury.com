@@ -1,0 +1,56 @@
+#father {
+    display: flex;
+    font-family: sans-serif;
+    gap: 50px;
+}
+
+#bro1 {
+    text-align: center;
+    width: 60%;
+}
+
+#phonepe>img {
+    width: 150px;
+    height: 30px;
+}
+
+#phonepe {
+    background-color: #6739B7;
+    border: 1px solid #6739B7;
+    cursor: pointer;
+}
+
+#address {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+}
+
+#name {
+    display: flex;
+    gap: 10px;
+}
+
+#home {
+    display: flex;
+    gap: 10px;
+}
+
+#final_call {
+    display: flex;
+    gap: 40px;
+}
+
+#final_call>button {
+    font-size: xx-small;
+    height: 20px;
+    background-color: #12284c;
+    color: white;
+    border: 0px;
+    cursor: pointer;
+}
+
+#bro2 {
+    background-color: #bebebe;
+    width: 40%;
+}
