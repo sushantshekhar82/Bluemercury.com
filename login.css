@@ -1,0 +1,79 @@
+#login{
+    height: 450px;
+    width: 50%;
+    /* border: 1px solid blue; */
+    margin: auto;
+    margin-top: 40px;
+}
+.h1Tag{
+    font-weight: 500;
+font-style: normal;
+transition: color .2s ease-in-out;
+letter-spacing: .2em;
+text-transform: uppercase;
+font-family: Montserrat Regular,sans-serif;
+font-size: 34px;
+letter-spacing: 1px;
+line-height: 29px;
+text-align: center;
+color: #12284c;
+/* margin-top: 0 */
+}
+.PTag{
+    font-family: Montserrat Light,sans-serif;
+letter-spacing: .4px;
+font-size: 16px;
+line-height: 24px;
+text-align: center;
+font-weight: inherit;
+/* margin-top: 0; */
+font-weight: 200;
+font-style: normal;
+color: #12284c;
+line-height: 1.65;
+
+
+
+}
+input{
+    margin-bottom: 15px;
+    /* position: relative; */
+ 
+display: block;
+padding: 10px 12px;
+border-radius: 0;
+border: 1px solid #12284c;
+width: 70%;
+line-height: normal;
+resize: none;
+transition: border-color .1s ease-in-out;
+background: transparent;
+color: inherit;
+font: inherit;
+margin: auto;
+color: inherit;
+font: inherit;
+cursor: default;
+
+}
+#btnTag{
+  
+    /* position: relative; */
+display: inline-block;
+padding: 15px;
+border-radius: 0;
+text-transform: uppercase;
+text-align: center;
+font-family: Montserrat Semi Bold,sans-serif;
+font-size: 14px;
+line-height: 14px;
+transition: color .45s cubic-bezier(.785,.135,.15,.86),border .45s cubic-bezier(.785,.135,.15,.86);
+z-index: 1;
+-webkit-tap-highlight-color: black;
+color: #fff;
+background-color: #12284c;
+width: 74%;
+margin: auto;
+margin-left: 13%;
+margin-top: 20px;
+}  
