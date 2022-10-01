@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skincare | bluemercury</title>
+    <link rel="stylesheet" href="shop.css">
+    
+</head>
+<body>
+<div id="gridout1">
+    <div class="gridin11">
+        <p>SKIN CARE CATEGORY</p>
+        <p>Select One to narrow results</p>
+        <hr>
+        <p ><a class="prod" href="#">Cleansers</a</p>
+        <p ><a class="prod" href="#">Eye Care</a</p>
+        <p ><a class="prod" href="#">Lip care</a</p>
+        <p ><a class="prod" href="#">Masks</a</p>
+        <p ><a class="prod" href="#">Moisturizers</a</p>    
+            <p ><a class="prod" href="#">Suncare</a</p> 
+                <p ><a class="prod" href="#">Treatment and Serum</a</p> 
+                    <p ><a class="prod" href="#">Vitamins and supliment</a</p>          
+        <hr> 
+         <P>FILTER SKIN CARE BY</P>
+         <select id="filterbrand" onchange="filterbrand()">
+        <option>FILTER BRANDS</option>
+        <option>BRAND</option>
+        <option>PRICE</option>
+        <option>SKIN TYPE</option>
+        </select>
+
+        <select id="filterpricerange" onchange="filterpricerange()">
+            <option>FILTER bY PRICE RANGE</option>
+            <option>BRAND</option>
+            <option>PRICE</option>
+            <option>SKIN TYPE</option>
+            </select>
+    </div>
+    <div class="gridin12">
+        <div class="topflex"> 
+            <p>SKIN CARE</p>
+            <span>SORT BY <select id="filter" onchange="sorting()">
+                <option>Featured</option>
+                <option>Best Sellers</option>
+                <option>Price Low to High</option>
+                <option>Price High to Low</option>
+                </select></span>
+        </div>
+       <div id="containershop"></div>
+    </div>
+</div>
+</body>
+</html>
+<script src="shop.js"></script>
