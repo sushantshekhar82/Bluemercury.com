@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 <link rel="stylesheet" href="login.css">
+<!-- <link rel="stylesheet" href="navbar.css"> -->
 </head>
 <body>
     
@@ -23,3 +24,10 @@
 <script src="login.js">
 
 </script>
+
+
+<script  type="module">
+
+    import {footer} from "./components/navbar.js";
+ document.getElementById("footer").innerHTML = footer();
+ </script>
