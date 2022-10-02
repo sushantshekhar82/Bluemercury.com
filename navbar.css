@@ -34,6 +34,11 @@ margin: 20px 0px 0px 120px;
 }
 #right i{
     gap: 10px;
+   
+}
+#right i a{
+    text-decoration: none;
+    color: black;
 }
 
 

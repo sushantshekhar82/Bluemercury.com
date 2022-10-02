@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Signup | Bluemercury</title>
   <link rel="stylesheet" href="signup.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="navbar.css">
 </head>
 <body>
     
-
+<div id="navbar"></div>
     <div id="login">
         <h1 class="h1Tag">CREATE ACCOUNT</h1>
         <p class="PTag">Complete the form below to create a bluemercury.com <br>
@@ -53,7 +54,12 @@
 
 
 </script>
+<script  type="module">
 
+    import {navbar,footer} from "./components/navbar.js";
+    document.getElementById("navbar").innerHTML = navbar();
+ document.getElementById("footer").innerHTML = footer();
+ </script>
 <!-- <script  type="module">
 
     import {footer} from "./components/navbar.js";

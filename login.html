@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login | Blueberry</title>
 <link rel="stylesheet" href="login.css">
-<!-- <link rel="stylesheet" href="navbar.css"> -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="navbar.css">
 </head>
 <body>
     
-
+<div id="navbar"></div>
     <div id="login">
         <h1 class="h1Tag">LOGIN</h1>
         <p class="PTag">please enter your mobile and email</p>
@@ -19,7 +20,9 @@
         <button id="btnTag" onclick="sigin()">Login</button>
         <p class="PTag">Don't have an account?<span><a href="signup.html">create one</a></span></p>
     </div>
+    <div id="footer"></div>
 </body>
+
 </html>
 <script src="login.js">
 
@@ -28,6 +31,7 @@
 
 <script  type="module">
 
-    import {footer} from "./components/navbar.js";
+    import {navbar,footer} from "./components/navbar.js";
+    document.getElementById("navbar").innerHTML = navbar();
  document.getElementById("footer").innerHTML = footer();
  </script>

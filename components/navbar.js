@@ -60,7 +60,7 @@ let navbar=()=>{
     <div id="right">
         <i class="fa fa-heart" aria-hidden="true"> wishlist</i>
         <i class="fa fa-search" aria-hidden="true"> Search</i>
-        <i class="fa fa-user" aria-hidden="true">Sign in/up</i>
+        <i class="fa fa-user" aria-hidden="true"><a href="login.html">Sign in/up</a></i>
         <i class="fa fa-shopping-bag" aria-hidden="true"> Bag</i>
 
     </div>
