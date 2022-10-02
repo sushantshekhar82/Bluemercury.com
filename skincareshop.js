@@ -63,7 +63,7 @@ function display(shopitem) {
    movetocartbtn.innerText = "MOVE TO CART"
    movetocartbtn.setAttribute('class', 'movetocartbtn')
    movetocartbtn.onclick = () => {
-      window.location.href = "http://127.0.0.1:5500/perfect-business-7811/cart/cart.html"
+      window.location.href = "cart.html"
    }
 
    smallpic.append(smallimg);

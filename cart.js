@@ -1,7 +1,7 @@
 // let url = "https://js211mockserver.herokuapp.com/api/projectskincare"
 let sum = 0;
 
-let data = JSON.parse(localStorage.getItem('cart')) || []
+let data = JSON.parse(localStorage.getItem('cart'));
 
 let RenderDom = (data) => {
     let container = document.getElementById('cart_container')
@@ -47,9 +47,9 @@ let RenderDom = (data) => {
         let remove = document.createElement('button')
         remove.innerText = "Remove"
         remove.setAttribute('id', "remove")
-        remove.onclick = () => {
-            erase(ind)
-        }
+       remove.addEventListener('click',function(){
+        erase(ind)
+       })
         let t_price = () => {
             return ("$" + ele.price * +quantity.value);
         }
@@ -77,7 +77,8 @@ let RenderDom = (data) => {
 RenderDom(data)
 
 let erase = (ind) => {
-    data = data.splice(ind, 1)
+    data.splice(ind, 1)
     localStorage.setItem('cart', JSON.stringify(data))
+    
     RenderDom(data)
 }
