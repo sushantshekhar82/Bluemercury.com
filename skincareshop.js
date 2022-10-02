@@ -1,3 +1,4 @@
+
 let shopitem1=JSON.parse(localStorage.getItem('shop'));
 let shopitem=shopitem1[shopitem1.length-1]
 let cartitem=JSON.parse(localStorage.getItem('cart'))||[];

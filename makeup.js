@@ -1,3 +1,6 @@
+import {footer,navbar} from "./components/navbar.js";
+ document.getElementById("footer").innerHTML = footer();
+ document.getElementById("navbar").innerHTML = navbar();
 let cont=document.getElementById('containershop');
 let shopitem=JSON.parse(localStorage.getItem('shop'))||[];
 
