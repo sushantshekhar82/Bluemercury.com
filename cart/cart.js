@@ -1,12 +1,7 @@
 // let url = "https://js211mockserver.herokuapp.com/api/projectskincare"
 let sum = 0;
 
-let getData = async () => {
-    let res = await fetch("https://js211mockserver.herokuapp.com/api/projectskincare")
-    res = await res.json()
-    RenderDom(res)
-    document.getElementById('no_items').innerText = `Your Cart (${res.length} items)`;
-}
+let data = JSON.parse(localStorage.getItem('cart')) || []
 
 let RenderDom = (data) => {
     let container = document.getElementById('cart_container')
@@ -37,6 +32,8 @@ let RenderDom = (data) => {
         let price = document.createElement('p')
         price.innerText = `$${ele.price} `
 
+        let div2 = document.getElementById('div')
+
         let quantity = document.createElement('input')
         quantity.type = 'number';
         quantity.defaultValue = 1;
@@ -46,13 +43,21 @@ let RenderDom = (data) => {
             total.innerText = null;
             total.innerText = t_price();
         }
+
+        let remove = document.createElement('button')
+        remove.innerText = "Remove"
+        remove.setAttribute('id', "remove")
+        remove.onclick = () => {
+            erase(ind)
+        }
         let t_price = () => {
             return ("$" + ele.price * +quantity.value);
         }
         let total = document.createElement('p')
         total.innerText = `${t_price()} `
 
-        son2.append(price, quantity, total)
+
+        son2.append(price, quantity, remove, total)
 
         let hr = document.createElement('hr')
 
@@ -69,3 +74,12 @@ let RenderDom = (data) => {
     })
 }
 
+RenderDom(data)
+
+let erase = (ind) => {
+    let data = JSON.parse(localStorage.getItem('cart')) || []
+    data = data.splice(ind, 1)
+    console.log(data)
+    console.log('ind:', ind)
+    RenderDom(data)
+}

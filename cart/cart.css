@@ -52,7 +52,7 @@
 }
 
 #offers {
-    line-height: 10px;
+
     margin-top: 100px;
 }
 
@@ -115,4 +115,12 @@
     width: 100px;
     height: 20px;
     text-align: center;
+}
+
+#remove {
+    width: 100px;
+    height: 40px;
+    border: 0px;
+    border-radius: 5px;
+    cursor: pointer;
 }

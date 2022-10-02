@@ -7,9 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./cart.css">
+    <link rel="stylesheet" href="../navbar.css">
 </head>
 
 <body>
+    <div id="navbar"></div>
     <div id="body">
         <h1 id="your_bag">YOUR BAG</h1>
         <p id="no_items">Your cart(No. of items)</p>
@@ -62,7 +64,7 @@
             <p>Shipping,Taxes,Beauty Cards, and additional discounts applied at the checkout</p>
         </div>
 
-        <a href="C:\Users\Shivkant\Desktop\Github-Repo\Project3.0#cart\perfect-business-7811\checkout\checkout.html">
+        <a href=http://127.0.0.1:5500/perfect-business-7811/checkout/checkout.html>
             <div id="div"><button id="checkout_button">CHECKOUT</button></div>
         </a>
 
@@ -76,8 +78,10 @@
 </html>
 
 <script type="module">
+    import { footer, navbar } from "../components/navbar.js"
+    console.log(footer)
+    document.getElementById("footer").innerHTML = footer()
+    document.getElementById('navbar').innerHTML = navbar()
 
-    import { footer } from "./components/navbar.js";
-    document.getElementById("footer").innerHTML = footer();
 </script>
 <script src="./cart.js"></script>

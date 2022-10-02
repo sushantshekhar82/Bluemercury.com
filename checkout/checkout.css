@@ -6,7 +6,7 @@
 
 #bro1 {
     text-align: center;
-    width: 60%;
+    width: 50%;
 }
 
 #phonepe>img {
@@ -43,14 +43,69 @@
 
 #final_call>button {
     font-size: xx-small;
-    height: 20px;
+    height: 40px;
     background-color: #12284c;
     color: white;
     border: 0px;
     cursor: pointer;
+    margin-left: 40px;
+    width: 250px;
 }
 
 #bro2 {
-    background-color: #bebebe;
+    background-color: #f1f1f1;
     width: 40%;
+}
+
+#title {
+    max-width: 248px;
+    max-height: 2.8em;
+}
+
+input {
+    max-height: 50px;
+    font-family: Montserrat Regular, sans-serif;
+    border: 1px solid #12284c;
+    margin-left: 20px;
+}
+
+.input>input {
+    height: 40px;
+    border-radius: 5px;
+}
+
+.input>button {
+    height: 45px;
+    border-radius: 5px;
+    background-color: #12284c;
+    color: white;
+    border: 0px;
+    margin-left: -4px;
+}
+
+.select>select {
+    height: 40px;
+    border-radius: 5px;
+    margin-left: 20px;
+}
+
+#country {
+    width: 365px;
+}
+
+#name>input {
+    width: 150px;
+}
+
+#address {
+    width: 360px;
+}
+
+#apartment {
+    margin-top: 10px;
+    width: 360px;
+}
+
+#state {
+    width: 140px;
 }
