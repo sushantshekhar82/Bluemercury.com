@@ -18,13 +18,17 @@ let RenderDom = (data) => {
         let image = document.createElement('img')
         image.src = ele.image;
 
+        let div = document.createElement('div')
+        div.setAttribute('id', 'mini_son')
         let title = document.createElement('h3')
         title.innerText = ele.brand;
 
         let name = document.createElement('p')
         name.innerText = ele.name;
+        div.append(title, name)
 
-        son1.append(image, title, name)
+
+        son1.append(image, div)
 
         let son2 = document.createElement('div')
         son2.setAttribute('id', 'son2')

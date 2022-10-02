@@ -101,8 +101,9 @@
 #son1 {
     border: 1px solid black;
     width: 40%;
-    text-align: center;
     font-size: smaller;
+    display: flex;
+    gap: 40px;
 }
 
 #son1>img {
@@ -111,7 +112,7 @@
     display: block;
 }
 
-#son1>p {
+#mini_son>p {
     border: 1px solid black;
 }
 
