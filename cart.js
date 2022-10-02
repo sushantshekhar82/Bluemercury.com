@@ -77,9 +77,7 @@ let RenderDom = (data) => {
 RenderDom(data)
 
 let erase = (ind) => {
-    let data = JSON.parse(localStorage.getItem('cart')) || []
     data = data.splice(ind, 1)
-    console.log(data)
-    console.log('ind:', ind)
+    localStorage.setItem('cart', JSON.stringify(data))
     RenderDom(data)
 }
