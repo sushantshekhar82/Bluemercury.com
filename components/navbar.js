@@ -54,8 +54,8 @@ let navbar=()=>{
         <i class="fa fa-map-marker" aria-hidden="true">STORE & SPA LOCATOR</i>
     </div>
     <div id="upper_middle">
-        <img
-            src="https://cdn.shopify.com/s/files/1/0283/0185/2747/files/bluemercury-logo_1216x@2x.png?v=1648743182">
+    <a href="index.html"> <img
+         src="https://cdn.shopify.com/s/files/1/0283/0185/2747/files/bluemercury-logo_1216x@2x.png?v=1648743182"/></a>
     </div>
     <div id="right">
         <i class="fa fa-heart" aria-hidden="true"> wishlist</i>
