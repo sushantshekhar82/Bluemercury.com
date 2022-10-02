@@ -137,7 +137,7 @@ span {
 
 .bottomedesc {
     width: 700px;
-    height: 250px;
+    height: auto;
     margin: auto;
 
 }

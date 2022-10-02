@@ -74,8 +74,8 @@ let navbar=()=>{
     <ul>
         <li><a href="#">SHOP</a>
             <ul>
-                <li><a href="#">SKIN CARE</a></li>
-                <li><a href="#">MAKE UP</a></li>
+                <li><a href="shop.html">SKIN CARE</a></li>
+                <li><a href="makeup.html">MAKE UP</a></li>
                 <li><a href="#">HAIR</a></li>
                 <li><a href="#">BATH AND BODY</a></li>
                 <li><a href="#">FRAGRANCE</a></li>

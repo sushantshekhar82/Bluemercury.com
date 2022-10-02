@@ -6,9 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="makeupshop.css">
+    <link rel="stylesheet" href="navbar1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
 </head>
 <body>
-    <span><a href="index.html">  Home  </a>/<a href="makeup.html">  Shop  </a>/<span id="prod"></span>
+    <div id="navbar"></div>
+    <span><a href="index.html">  Home  </a>/<a href="makeup.html">  Makeup  </a>/<span id="prod"></span>
     <div id="threecol">
         <div id="smallpic"></div>
         <div id="bigpic"></div>
@@ -27,7 +31,13 @@
         </div>
         
     </div>
-    
+    <div id="footer"></div>
 </body>
 </html>
-<script src="skincareshop.js"></script>
+<script src="skincareshop.js" ></script>
+<script src="makeupshop.js" type="module"></script>
+<!-- <script  type="module">
+import {footer,navbar} from "./components/navbar.js";
+ document.getElementById("footer").innerHTML = footer();
+ document.getElementById("navbar").innerHTML = navbar();
+</script> -->
