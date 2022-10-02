@@ -11,26 +11,22 @@ function Payment(event) {
     let img = document.createElement("img")
     document.querySelector("body").append(img)
     img.src = "https://c.tenor.com/_901zrKQL1gAAAAC/just-a-moment-waiting.gif"
-    let Upi = document.getElementById("upi").value;
-
-
 
     let myPromise = new Promise((resolve, reject) => {
-        UserUpi.forEach(function (ele, ind) {
-            setTimeout(() => {
-                if (Upi === ele) {
-                    resolve("Ho Gya")
+        console.log('UserUpi:', UserUpi)
+        let Upi = document.getElementById("upi").value;
 
-                } else {
-                    reject("Oh NO!")
+
+        setTimeout(() => {
+            for (let i = 0; i < UserUpi.length; i++) {
+                if (Upi === UserUpi[i]) {
+                    resolve('oh yeah')
                 }
-            }, 2000);
-        })
-
-
+            }
+            reject("Oh NO!")
+        }, 2000);
 
     })
-
 
     myPromise.then(function (res) {
         console.log("res:", res)
@@ -45,7 +41,12 @@ function Payment(event) {
         img.src = "https://cdn.dribbble.com/users/34292/screenshots/5371308/expiredfailedpaymentvdrib.gif"
     });
 
+
 }
+
+
+
+
 
 
 //let myPromise = new Promise(function (resolve, reject) {
