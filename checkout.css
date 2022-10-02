@@ -109,3 +109,18 @@ input {
 #state {
     width: 140px;
 }
+
+#subtotal1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+#mini_container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.final_total {
+    display: flex;
+    justify-content: space-between;
+}

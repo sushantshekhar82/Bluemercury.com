@@ -45,9 +45,9 @@
                     </select>
                 </div>
                 <div id="final_call">
-                    <a href=http://127.0.0.1:5500/perfect-business-7811/cart/cart.html>
+                    <a href="cart.html">
                         < RETURN TO CART</a>
-                            <button>CONTINUE TO PAYMENT METHOD</button>
+                            <button onclick="payment()">CONTINUE TO PAYMENT METHOD</button>
                 </div>
             </div>
 
@@ -58,17 +58,16 @@
             <button id="apply" onclick="discount()">APPLY</button>
             <hr>
             <div>
-                <div>
+                <div id="subtotal1">
                     <p>Subtotal</p>
                     <p id="subtotal"></p>
                 </div>
                 <div>
                     <p>Shipping</p>
-                    <p>Calculated at next step</p>
                 </div>
             </div>
             <hr>
-            <div>
+            <div class="final_total">
                 <h3>Total</h3>
                 <h4 id="total"></h4>
             </div>

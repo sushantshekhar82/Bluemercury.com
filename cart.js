@@ -32,7 +32,9 @@ let RenderDom = (data) => {
         let price = document.createElement('p')
         price.innerText = `$${ele.price} `
 
-        let div2 = document.getElementById('div')
+        // let div2 = document.getElementById('div')
+
+        let total_amount = document.getElementById('subtotal_price')
 
         let quantity = document.createElement('input')
         quantity.type = 'number';
@@ -40,21 +42,32 @@ let RenderDom = (data) => {
         quantity.min = 1;
         quantity.setAttribute('id', 'quant')
         quantity.onchange = () => {
+            localStorage.removeItem("total_amount")
             total.innerText = null;
             total.innerText = t_price();
+            total_amount.innerText = null;
+            sum = 0;
+            sum += (ele.price * +quantity.value);
+            total_amount.innerText = `Subtotal price($${sum})`
+            localStorage.setItem("total_amount", JSON.stringify(total_amount.innerText))
         }
+
 
         let remove = document.createElement('button')
         remove.innerText = "Remove"
         remove.setAttribute('id', "remove")
-       remove.addEventListener('click',function(){
-        erase(ind)
-       })
+        remove.addEventListener('click', function () {
+            erase(ind)
+        })
         let t_price = () => {
             return ("$" + ele.price * +quantity.value);
         }
         let total = document.createElement('p')
         total.innerText = `${t_price()} `
+        sum += (ele.price * +quantity.value);
+
+        total_amount.innerText = `Subtotal price(${sum})`
+        localStorage.setItem("total_amount", JSON.stringify(total_amount.innerText))
 
 
         son2.append(price, quantity, remove, total)
@@ -66,11 +79,11 @@ let RenderDom = (data) => {
         container.append(big_dad)
 
 
-        sum += (ele.price * +quantity.value);
 
-        let total_amount = document.getElementById('subtotal_price')
-        total_amount.innerText = null
-        total_amount.innerText = `Subtotal Price($${sum})`
+
+
+        // total_amount.innerText = null
+        // total_amount.innerText = `Subtotal Price($${sum})`
     })
 }
 
@@ -79,6 +92,7 @@ RenderDom(data)
 let erase = (ind) => {
     data.splice(ind, 1)
     localStorage.setItem('cart', JSON.stringify(data))
-    
+
     RenderDom(data)
 }
+

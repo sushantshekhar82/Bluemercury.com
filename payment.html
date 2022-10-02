@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #nav {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            height: 100px;
+        }
+
+        #img {
+            width: 30%;
+            height: 100%;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        input {
+            display: block;
+            margin: auto;
+            text-align: center;
+        }
+
+        #upi {
+            margin-bottom: 40px;
+        }
+
+        #submit {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="nav">
+        <h1 id="name">Bank Name</h1>
+        <img id="img"
+            src="https://m.economictimes.com/thumb/msid-74960608,width-1200,height-900,resizemode-4,imgsize-49172/upi-twitter.jpg"
+            alt="">
+    </div>
+    <P>ENTER UPI PIN</P>
+    <form id="form" action="submit">
+        <input type="password" maxlength="6" id="upi" placeholder="_  _  _  _  _  _">
+        <input type="submit" name="" id="submit">
+    </form>
+
+</body>
+
+</html>
+<script src="payment.js"></script>

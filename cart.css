@@ -99,7 +99,7 @@
 }
 
 #son1 {
-    border: 0px solid black;
+    border: 1px solid black;
     width: 40%;
     text-align: center;
     font-size: smaller;
@@ -109,6 +109,10 @@
     height: 100%;
     width: auto;
     display: block;
+}
+
+#son1>p {
+    border: 1px solid black;
 }
 
 #quant {
