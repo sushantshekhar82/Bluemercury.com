@@ -212,7 +212,14 @@ let navbar=()=>{
 
 
 
-<div id="bottom">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, dolore.</div>`
+<div id="bottom"> <marquee>
+        <label style="width:100% ; padding-right: 1400px;"> Free Samples with all orders</label>
+        <label id="secondmarq"> Due to high volume shipping times may be delayed</label>
+    
+    </marquee>
+    
+</div>
+    </div> `
 }
 
  export  {footer,navbar}
