@@ -99,7 +99,7 @@
 }
 
 #son1 {
-    border: 1px solid black;
+    border: 0px solid black;
     width: 40%;
     font-size: smaller;
     display: flex;
@@ -113,7 +113,7 @@
 }
 
 #mini_son>p {
-    border: 1px solid black;
+    border: 0px solid black;
 }
 
 #quant {
