@@ -5,7 +5,7 @@ let cont=document.getElementById('containershop');
 let shopitem=JSON.parse(localStorage.getItem('shop'))||[];
 
 let cartitem=JSON.parse(localStorage.getItem('cart'))||[];
-let url="https://js211mockserver.herokuapp.com/api/projectmakeup";
+let url="https://render-mock-server-7ng4.onrender.com/projectmakeup";
 let getData= async ()=>{
   let res=await fetch(`${url}`);
   let data= await res.json();

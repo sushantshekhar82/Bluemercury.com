@@ -2,9 +2,9 @@ let cont=document.getElementById('containershop');
 let shopitem=JSON.parse(localStorage.getItem('shop'))||[];
 
 let cartitem=JSON.parse(localStorage.getItem('cart'))||[];
-let url="https://js211mockserver.herokuapp.com/api/projectskincare";
+let url="https://render-mock-server-7ng4.onrender.com/projectskincare";
 let getData= async ()=>{
-  let res=await fetch("https://js211mockserver.herokuapp.com/api/projectskincare");
+  let res=await fetch("https://render-mock-server-7ng4.onrender.com/projectskincare");
   let data= await res.json();
   console.log(data);
   renderDom(data);
@@ -116,21 +116,21 @@ window.location.href="skincareshop.html"
 let  sorting= async ()=>{
   let sortvalue=document.getElementById("sortproduct").value;
   if(sortvalue==="all"){
-    let res=await fetch(`https://js211mockserver.herokuapp.com/api/projectskincare`);
+    let res=await fetch(`https://render-mock-server-7ng4.onrender.com/projectskincare`);
     let data=await res.json() 
     renderDom(data)
     console.log(data);
   
    }
  if(sortvalue==="bestseller"){
-  let res=await fetch(`https://js211mockserver.herokuapp.com/api/projectskincare?sort=bestseller`);
+  let res=await fetch(`https://render-mock-server-7ng4.onrender.com/projectskincare?sort=bestseller`);
   let data=await res.json() 
   renderDom(data)
   console.log(data);
 
  }
  if(sortvalue==="newarrival"){
-  let res=await fetch(`https://js211mockserver.herokuapp.com/api/projectskincare?sort=newarrival`);
+  let res=await fetch(`https://render-mock-server-7ng4.onrender.com/projectskincare?sort=newarrival`);
   let data=await res.json() 
   renderDom(data)
   console.log(data);
@@ -154,31 +154,31 @@ let  sorting= async ()=>{
 let filterpricerange= async ()=>{
   let filterpricerange1=document.getElementById("filterpricerange1").value;
   if(filterpricerange1=="all"){
-    let res=await fetch(`https://js211mockserver.herokuapp.com/api/projectskincare`);
+    let res=await fetch(`https://render-mock-server-7ng4.onrender.com/projectskincare`);
     let data=await res.json() 
     renderDom(data)
     console.log(data);
   }
 if(filterpricerange1=="$0 To $50"){
-  let res=await fetch(`https://js211mockserver.herokuapp.com/api/projectskincare?pricerange=$0_To_$50`);
+  let res=await fetch(`https://render-mock-server-7ng4.onrender.com/projectskincare?pricerange=$0_To_$50`);
   let data=await res.json() 
   renderDom(data)
   console.log(data);
 }
 if(filterpricerange1=="$50 To $100"){
-  let res=await fetch(`https://js211mockserver.herokuapp.com/api/projectskincare?pricerange=$50_To_$100`);
+  let res=await fetch(`https://render-mock-server-7ng4.onrender.com/projectskincare?pricerange=$50_To_$100`);
   let data=await res.json() 
   renderDom(data)
   console.log(data);
 }
 if(filterpricerange1=="$100 To $200"){
-  let res=await fetch(`https://js211mockserver.herokuapp.com/api/projectskincare?pricerange=$100_To_$200`);
+  let res=await fetch(`https://render-mock-server-7ng4.onrender.com/projectskincare?pricerange=$100_To_$200`);
   let data=await res.json() 
   renderDom(data)
   console.log(data);
 }
 if(filterpricerange1=="$200+"){
-  let res=await fetch(`https://js211mockserver.herokuapp.com/api/projectskincare?pricerange=$200`);
+  let res=await fetch(`https://render-mock-server-7ng4.onrender.com/projectskincare?pricerange=$200`);
   let data=await res.json() 
   renderDom(data)
   console.log(data);
@@ -188,31 +188,31 @@ if(filterpricerange1=="$200+"){
 let filterbrand= async ()=>{
   let filterbrand1=document.getElementById("filterbrand1").value;
   if(filterbrand1=="all"){
-    let res=await fetch(`https://js211mockserver.herokuapp.com/api/projectskincare`);
+    let res=await fetch(`https://render-mock-server-7ng4.onrender.com/projectskincare`);
     let data=await res.json() 
     renderDom(data)
     console.log(data);
   }
   if(filterbrand1=="111SKIN"){
-    let res=await fetch(`https://js211mockserver.herokuapp.com/api/projectskincare?brand=111SKIN`);
+    let res=await fetch(`https://render-mock-server-7ng4.onrender.com/projectskincare?brand=111SKIN`);
     let data=await res.json() 
     renderDom(data)
     console.log(data);
   }
   if(filterbrand1=="BOBBI BROWN"){
-    let res=await fetch(`https://js211mockserver.herokuapp.com/api/projectskincare?brand=BOBBI_BROWN`);
+    let res=await fetch(`https://render-mock-server-7ng4.onrender.com/projectskincare?brand=BOBBI_BROWN`);
     let data=await res.json() 
     renderDom(data)
     console.log(data);
   }
   if(filterbrand1=="8GREENS"){
-    let res=await fetch(`https://js211mockserver.herokuapp.com/api/projectskincare?brand=8GREENS`);
+    let res=await fetch(`https://render-mock-server-7ng4.onrender.com/projectskincare?brand=8GREENS`);
     let data=await res.json() 
     renderDom(data)
     console.log(data);
   }
   if(filterbrand1=="WILDLING"){
-    let res=await fetch(`https://js211mockserver.herokuapp.com/api/projectskincare?brand=WILDLING`);
+    let res=await fetch(`https://render-mock-server-7ng4.onrender.com/projectskincare?brand=WILDLING`);
     let data=await res.json() 
     renderDom(data)
     console.log(data);
