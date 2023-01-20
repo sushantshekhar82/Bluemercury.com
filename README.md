@@ -1,5 +1,14 @@
-
-
+<h1>Bluemercury Clone</h1>
+Bluemercury is a skincare product Ecommerce website which gives you wide varieties of branded skincare , makeup care and many more products.
+<h2>Tech Stack used</h2>
+<ul>
+<li>Javascript</li>
+<li>Json Server</li>
+<li>Render(alternate of Heroko)</li>
+<li>API</li>
+<li>HTML5</li>
+<li>CSS3</li>
+</ul>
 
 <h1>Group project</h1>
 fw19_0479 - Kumar Sushant Shekhar       - Team Lead  
