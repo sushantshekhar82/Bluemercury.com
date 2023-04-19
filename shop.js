@@ -1,17 +1,20 @@
 let cont=document.getElementById('containershop');
 let shopitem=JSON.parse(localStorage.getItem('shop'))||[];
-
+let spinner = document.getElementById("spinner");
 let cartitem=JSON.parse(localStorage.getItem('cart'))||[];
 let url="https://render-mock-server-7ng4.onrender.com/projectskincare";
 let getData= async ()=>{
+  spinner.style.display = "block";
   let res=await fetch("https://render-mock-server-7ng4.onrender.com/projectskincare");
   let data= await res.json();
   console.log(data);
+  spinner.style.display = "none";
   renderDom(data);
 }
 getData()
 
 let renderDom=(data)=>{
+  spinner.style.display = "block";
  cont.innerHTML=null;
 let q=0;
  data.map((el,i)=>{
@@ -74,6 +77,7 @@ let q=0;
     //  divout.append(divin1,divin2);
     //  divbtnbag.append(addtocartbtn)
      div.append(imageproduct,brandname,title,productprice)
+     spinner.style.display = "none";
      cont.append(div);
  })
 

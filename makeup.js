@@ -3,18 +3,21 @@ import {footer,navbar} from "./components/navbar.js";
  document.getElementById("navbar").innerHTML = navbar();
 let cont=document.getElementById('containershop');
 let shopitem=JSON.parse(localStorage.getItem('shop'))||[];
-
+let spinner = document.getElementById("spinner");
 let cartitem=JSON.parse(localStorage.getItem('cart'))||[];
 let url="https://render-mock-server-7ng4.onrender.com/projectmakeup";
 let getData= async ()=>{
+  spinner.style.display = "block";
   let res=await fetch(`${url}`);
   let data= await res.json();
   console.log(data);
+  spinner.style.display = "none";
   renderDom(data);
 }
 getData()
 
 let renderDom=(data)=>{
+  spinner.style.display = "block";
  cont.innerHTML=null;
 let q=0;
  data.map((el,i)=>{
@@ -76,6 +79,7 @@ let q=0;
     //  divin2.append(wishlistbtn)
     //  divout.append(divin1,divin2);
     //  divbtnbag.append(addtocartbtn)
+    spinner.style.display = "none";
      div.append(imageproduct,brandname,title,productprice)
      cont.append(div);
  })

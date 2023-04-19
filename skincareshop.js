@@ -77,5 +77,6 @@ display(shopitem)
 function addcart(el) {
    cartitem.push(el)
    localStorage.setItem('cart', JSON.stringify(cartitem));
+   alert("Item added in cart")
    window.location.href = "skincareshop.html"
 }

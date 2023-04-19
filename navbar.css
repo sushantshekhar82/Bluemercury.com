@@ -2,7 +2,9 @@
 padding: 0;
 font-family: Montserrat Regular,sans-serif;
 }
-
+#navbar{
+    width: 100%;
+}
 
 
 #upper{
@@ -237,7 +239,7 @@ font-weight: lighter;
 
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 .carousel-container {
-  width: 1280px;
+  width: 100%;
   margin: 20px auto;
   min-height: 200px;
   position: relative;
@@ -315,4 +317,26 @@ font-weight: lighter;
 .info p,.info h4{
     margin: 0px;
 
+}
+@media only screen and (min-width: 220px) and (max-width: 480px) {
+#upper{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid red;
+    align-items: center;
+    
+}
+    #upper_middle img{
+width: 150px;
+
+}
+#right{
+    font-size: small;
+   
+    gap: 5px;
+    margin-right: 2px;
+    display: flex;
+    justify-content: space-around;
+    
+}
 }

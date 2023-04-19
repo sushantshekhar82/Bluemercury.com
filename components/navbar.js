@@ -1,3 +1,6 @@
+let cart=JSON.parse(localStorage.getItem("cart"))
+let cartlength=cart.length;
+console.log(cartlength)
 let footer=()=>{
 return ` <div>
 <h5>Get Expert Beauty Insight & Offers</h5>
@@ -61,7 +64,7 @@ let navbar=()=>{
         <i class="fa fa-heart" aria-hidden="true"> wishlist</i>
         <i class="fa fa-search" aria-hidden="true"> Search</i>
         <i class="fa fa-user" aria-hidden="true"><a href="login.html">Sign in/up</a></i>
-        <i class="fa fa-shopping-bag" aria-hidden="true"> Bag</i>
+        <i class="fa fa-shopping-bag" aria-hidden="true"><span style="color:red; font-size:23px;font-weight:bold">${cartlength}</span> </i>
 
     </div>
 
