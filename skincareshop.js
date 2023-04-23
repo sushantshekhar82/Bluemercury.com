@@ -1,10 +1,11 @@
 let shopitem1 = JSON.parse(localStorage.getItem('shop'));
 let shopitem = shopitem1[shopitem1.length - 1]
-let cartitem = JSON.parse(localStorage.getItem('cart')) || [];
+let cartitem = JSON.parse(localStorage.getItem('cart')) 
 let smallpic = document.getElementById("smallpic");
 let bigpic = document.getElementById("bigpic");
 let info = document.getElementById("info");
 let title = document.querySelector('title')
+var flag=false;
 title.innerText = shopitem.name
 document.querySelector("#prod").innerText = shopitem.name
 function display(shopitem) {
@@ -58,13 +59,20 @@ function display(shopitem) {
    })
    let p = document.createElement('p')
    p.innerText = "$" + shopitem.price
-
    let movetocartbtn = document.createElement('button')
+   if(cartitem.length>0){
+     movetocartbtn.style.display="none" 
+   }else{
+      movetocartbtn.style.display="block" 
+   }
+
+  
    movetocartbtn.innerText = "MOVE TO CART"
    movetocartbtn.setAttribute('class', 'movetocartbtn')
    movetocartbtn.onclick = () => {
       window.location.href = "cart.html"
    }
+   
 
    smallpic.append(smallimg);
    bigpic.append(bigimg);
@@ -75,8 +83,14 @@ function display(shopitem) {
 display(shopitem)
 
 function addcart(el) {
+  let itemInCart = cartitem.find(item => item.id === el.id);
+  if (itemInCart) {
+   alert("already in cart")
+ } else {
    cartitem.push(el)
    localStorage.setItem('cart', JSON.stringify(cartitem));
    alert("Item added in cart")
    window.location.href = "skincareshop.html"
+ }
+   
 }
