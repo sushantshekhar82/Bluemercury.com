@@ -1,6 +1,6 @@
 let shopitem1 = JSON.parse(localStorage.getItem('shop'));
 let shopitem = shopitem1[shopitem1.length - 1]
-let cartitem = JSON.parse(localStorage.getItem('cart')) 
+let cartitem = JSON.parse(localStorage.getItem('cart'))||[]
 let smallpic = document.getElementById("smallpic");
 let bigpic = document.getElementById("bigpic");
 let info = document.getElementById("info");
@@ -79,14 +79,27 @@ function display(shopitem) {
 display(shopitem)
 
 function addcart(el) {
-  let itemInCart = cartitem.find(item => item.id === el.id);
-  if (itemInCart) {
-   alert("already in cart")
- } else {
-   cartitem.push(el)
-   localStorage.setItem('cart', JSON.stringify(cartitem));
-   alert("Item added in cart")
-   window.location.href = "skincareshop.html"
- }
+   console.log(cartitem===null)
+   if(cartitem===null){
+      cartitem.push(el)
+      localStorage.setItem('cart', JSON.stringify(cartitem));
+      alert("Item added in cart")
+      window.location.href = "skincareshop.html"   
+   }else{
+      let itemInCart = cartitem.find(item => item.id === el.id);
+      console.log(itemInCart)
+      if (itemInCart) {
+       alert("already in cart")
+     } else {
+       cartitem.push(el)
+       localStorage.setItem('cart', JSON.stringify(cartitem));
+       alert("Item added in cart")
+       window.location.href = "skincareshop.html"
+     }
+   }
+  
+      
+   
+  
    
 }
