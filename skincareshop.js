@@ -60,11 +60,7 @@ function display(shopitem) {
    let p = document.createElement('p')
    p.innerText = "$" + shopitem.price
    let movetocartbtn = document.createElement('button')
-   if(cartitem.length>0){
-     movetocartbtn.style.display="none" 
-   }else{
-      movetocartbtn.style.display="block" 
-   }
+  
 
   
    movetocartbtn.innerText = "MOVE TO CART"
